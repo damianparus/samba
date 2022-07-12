@@ -19,4 +19,4 @@ services:
     tty: true
     volumes:
       - /home/samba:/mnt
-    command: '-s "Mount;/mnt;yes;no;yes;all;" -p'
+    command: '-S -s "Mount;/mnt;yes;no;yes;all;" -p'
