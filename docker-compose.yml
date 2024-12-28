@@ -6,6 +6,7 @@ services:
     image: dperson/samba
     environment:
       TZ: 'Europe/Warsaw'
+      WIDELINKS: yes
     ports:
       - "137:137/udp"
       - "138:138/udp"
@@ -19,4 +20,5 @@ services:
     tty: true
     volumes:
       - /home/samba:/mnt
+      - /backup:/backup
     command: '-S -s "Mount;/mnt;yes;no;yes;all;" -p'
