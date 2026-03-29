@@ -21,4 +21,4 @@ services:
     volumes:
       - /home/samba:/mnt
       - /backup:/backup
-    command: '-S -s "Mount;/mnt;yes;no;yes;all;" -p'
+    command: '-S -s "Mount;/mnt;yes;no;yes;all;" -p -u "guest;guest"'
